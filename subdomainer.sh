@@ -364,7 +364,7 @@ sublistIgnore() {
 
 "
 
-   python3 Tools/Sublist3r/sublist3r.py -d $domains -v -o "result/$date/$domains-sublist3r.txt"
+   python3 Tools/Sublist3r/sublist3r.py -d $domains -v -t 10 -e "baidu,yahoo,google,bing,ask,netcraft,dnsdumpster,threatcrowd,ssl,passivedns" -o "result/$date/$domains-sublist3r.txt"
 
 }
 
